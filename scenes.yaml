@@ -1,0 +1,868 @@
+- id: '1626669979596'
+  name: Good Morning
+  entities:
+    light.plate01_backlight:
+      supported_color_modes:
+      - brightness
+      color_mode: brightness
+      brightness: 255
+      friendly_name: plate01 backlight
+      supported_features: 0
+      state: 'on'
+    number.plate01_active_page:
+      min: 0
+      max: 11
+      step: 1
+      mode: auto
+      assumed_state: true
+      icon: mdi:page-next-outline
+      friendly_name: plate01 active page
+      state: '1'
+    light.plate01_selected_foreground_color:
+      supported_color_modes:
+      - rgb
+      color_mode: rgb
+      brightness: 1
+      hs_color:
+      - 0
+      - 0
+      rgb_color:
+      - 0
+      - 0
+      - 0
+      xy_color:
+      - 0
+      - 0
+      friendly_name: plate01 selected foreground color
+      supported_features: 0
+      state: 'on'
+    light.plate01_selected_background_color:
+      supported_color_modes:
+      - rgb
+      color_mode: rgb
+      brightness: 255
+      hs_color:
+      - 0
+      - 0
+      rgb_color:
+      - 255
+      - 255
+      - 255
+      xy_color:
+      - 0.323
+      - 0.329
+      friendly_name: plate01 selected background color
+      supported_features: 0
+      state: 'on'
+    light.plate01_unselected_foreground_color:
+      supported_color_modes:
+      - rgb
+      color_mode: rgb
+      brightness: 224
+      hs_color:
+      - 0
+      - 0
+      rgb_color:
+      - 255
+      - 255
+      - 255
+      xy_color:
+      - 0.323
+      - 0.329
+      friendly_name: plate01 unselected foreground color
+      supported_features: 0
+      state: 'on'
+    light.plate01_unselected_background_color:
+      supported_color_modes:
+      - rgb
+      color_mode: rgb
+      brightness: 64
+      hs_color:
+      - 0
+      - 0
+      rgb_color:
+      - 255
+      - 255
+      - 255
+      xy_color:
+      - 0.323
+      - 0.329
+      friendly_name: plate01 unselected background color
+      supported_features: 0
+      state: 'on'
+    light.master_bedroom_lamp:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      supported_color_modes:
+      - color_temp
+      - xy
+      color_mode: color_temp
+      brightness: 250
+      color_temp: 223
+      hs_color:
+      - 26.726
+      - 26.745
+      rgb_color:
+      - 255
+      - 217
+      - 186
+      xy_color:
+      - 0.395
+      - 0.358
+      friendly_name: Master Bedroom Lamp
+      supported_features: 63
+      state: 'on'
+    light.master_bedroom_dab_lamp:
+      min_mireds: 154
+      max_mireds: 500
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      supported_color_modes:
+      - color_temp
+      - xy
+      color_mode: color_temp
+      brightness: 250
+      color_temp: 190
+      hs_color:
+      - 27.371
+      - 15.784
+      rgb_color:
+      - 255
+      - 233
+      - 214
+      xy_color:
+      - 0.362
+      - 0.347
+      friendly_name: Master Bedroom Dab Lamp
+      supported_features: 63
+      state: 'on'
+    light.canvas_4966:
+      min_mireds: 154
+      max_mireds: 833
+      effect_list:
+      - Arcade Summer
+      - Candy Cane Fireworks
+      - Color Burst
+      - Falling Whites
+      - Fireworks
+      - Flames
+      - Forest
+      - Forgetful Fish
+      - Galactic Fusion
+      - Inner Peace
+      - Meteor Shower
+      - Nemo
+      - Nightvale
+      - Northern Lights
+      - Oceanworks
+      - Paint Splatter
+      - Passionfruit
+      - Pride Rainbow
+      - Pulse Pop Beats
+      - Radial Sound Bar
+      - Rainbow
+      - Rhythmic Northern Lights
+      - Riddick
+      - Romantic
+      - Rosco
+      - Sea Flame
+      - Sound Bar
+      - Streaking Notes
+      - Try this before you skip it
+      - Zarek
+      supported_color_modes:
+      - color_temp
+      - hs
+      color_mode: hs
+      brightness: 165
+      hs_color:
+      - 0
+      - 0
+      rgb_color:
+      - 255
+      - 255
+      - 255
+      xy_color:
+      - 0.323
+      - 0.329
+      effect: Forgetful Fish
+      icon: mdi:triangle-outline
+      friendly_name: Canvas
+      supported_features: 36
+      state: 'on'
+  metadata:
+    light.canvas_4966:
+      entity_only: true
+    light.plate01_backlight:
+      entity_only: false
+    number.plate01_active_page:
+      entity_only: false
+    light.plate01_selected_foreground_color:
+      entity_only: false
+    light.plate01_selected_background_color:
+      entity_only: false
+    light.plate01_unselected_foreground_color:
+      entity_only: false
+    light.plate01_unselected_background_color:
+      entity_only: false
+    light.master_bedroom_lamp:
+      entity_only: false
+    light.master_bedroom_dab_lamp:
+      entity_only: false
+- id: '1640156346373'
+  name: plate off
+  entities:
+    light.plate01_backlight:
+      supported_color_modes:
+      - brightness
+      color_mode: brightness
+      brightness: 3
+      friendly_name: plate01 backlight
+      supported_features: 0
+      state: 'on'
+    number.plate01_active_page:
+      min: 0
+      max: 11
+      step: 1
+      mode: auto
+      assumed_state: true
+      icon: mdi:page-next-outline
+      friendly_name: plate01 active page
+      state: '1'
+    light.plate01_selected_foreground_color:
+      supported_color_modes:
+      - rgb
+      color_mode: rgb
+      brightness: 1
+      hs_color:
+      - 0
+      - 0
+      rgb_color:
+      - 0
+      - 0
+      - 0
+      xy_color:
+      - 0
+      - 0
+      friendly_name: plate01 selected foreground color
+      supported_features: 0
+      state: 'on'
+    light.plate01_selected_background_color:
+      supported_color_modes:
+      - rgb
+      color_mode: rgb
+      brightness: 255
+      hs_color:
+      - 0
+      - 0
+      rgb_color:
+      - 255
+      - 255
+      - 255
+      xy_color:
+      - 0.323
+      - 0.329
+      friendly_name: plate01 selected background color
+      supported_features: 0
+      state: 'on'
+    light.plate01_unselected_foreground_color:
+      supported_color_modes:
+      - rgb
+      color_mode: rgb
+      brightness: 224
+      hs_color:
+      - 0
+      - 0
+      rgb_color:
+      - 255
+      - 255
+      - 255
+      xy_color:
+      - 0.323
+      - 0.329
+      friendly_name: plate01 unselected foreground color
+      supported_features: 0
+      state: 'on'
+    light.plate01_unselected_background_color:
+      supported_color_modes:
+      - rgb
+      color_mode: rgb
+      brightness: 96
+      hs_color:
+      - 0
+      - 0
+      rgb_color:
+      - 255
+      - 255
+      - 255
+      xy_color:
+      - 0.323
+      - 0.329
+      friendly_name: plate01 unselected background color
+      supported_features: 0
+      state: 'on'
+- id: '1640722727400'
+  name: Living Room Movie Time
+  entities:
+    light.living_room_lights:
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      - xy
+      color_mode: color_temp
+      brightness: 82
+      color_temp: 345
+      hs_color:
+      - 28.002
+      - 59.739
+      rgb_color:
+      - 255
+      - 173
+      - 102
+      xy_color:
+      - 0.507
+      - 0.384
+      entity_id:
+      - light.living_room_lamp_a
+      - light.living_room_lamp_b
+      - light.living_room_lamp_c
+      icon: mdi:lightbulb-group
+      friendly_name: Living Room Lights
+      supported_features: 40
+      state: 'on'
+    light.dining_room_overhead_lights:
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      supported_color_modes:
+      - brightness
+      friendly_name: Dining Room Overhead Lights
+      supported_features: 45
+      state: 'off'
+    light.kitchen_lights:
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      supported_color_modes:
+      - brightness
+      friendly_name: Kitchen Lights
+      supported_features: 45
+      state: 'off'
+    light.upstairs_hallway_light:
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      supported_color_modes:
+      - brightness
+      color_mode: brightness
+      brightness: 115
+      friendly_name: Upstairs Hallway Light
+      supported_features: 45
+      state: 'on'
+    light.upstairs_hall:
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      supported_color_modes:
+      - brightness
+      color_mode: brightness
+      brightness: 48
+      friendly_name: Front Hall
+      supported_features: 45
+      state: 'on'
+- id: '1640722934788'
+  name: Living Room-Normal Lighting
+  entities:
+    light.dining_room_overhead_lights:
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      supported_color_modes:
+      - brightness
+      color_mode: brightness
+      brightness: 255
+      friendly_name: Dining Room Overhead Lights
+      supported_features: 45
+      state: 'on'
+    light.upstairs_hall:
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      supported_color_modes:
+      - brightness
+      color_mode: brightness
+      brightness: 3
+      friendly_name: Front Hall
+      supported_features: 45
+      state: 'on'
+    light.living_room_lights:
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      - xy
+      color_mode: color_temp
+      brightness: 255
+      color_temp: 345
+      hs_color:
+      - 28.002
+      - 59.739
+      rgb_color:
+      - 255
+      - 173
+      - 102
+      xy_color:
+      - 0.507
+      - 0.384
+      entity_id:
+      - light.living_room_lamp_a
+      - light.living_room_lamp_b
+      - light.living_room_lamp_c
+      icon: mdi:lightbulb-group
+      friendly_name: Living Room Lights
+      supported_features: 40
+      state: 'on'
+    light.upstairs_hallway_light:
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      supported_color_modes:
+      - brightness
+      color_mode: brightness
+      brightness: 255
+      friendly_name: Upstairs Hallway Light
+      supported_features: 45
+      state: 'on'
+    light.kitchen_lights:
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      supported_color_modes:
+      - brightness
+      color_mode: brightness
+      brightness: 255
+      friendly_name: Kitchen Lights
+      supported_features: 45
+      state: 'on'
+- id: '1643259612077'
+  name: element on
+  entities:
+    light.elements_display:
+      min_mireds: 250
+      max_mireds: 666
+      effect_list:
+      - Bloom
+      - Calming Waterfall
+      - Clouds
+      - Ember
+      - Fireflies
+      - Glimmer
+      - Sahara Night
+      - Splash
+      - Sunbeam
+      - Warm Waves
+      supported_color_modes:
+      - color_temp
+      - hs
+      color_mode: hs
+      brightness: 153
+      hs_color:
+      - 0
+      - 0
+      rgb_color:
+      - 255
+      - 255
+      - 255
+      xy_color:
+      - 0.323
+      - 0.329
+      color_temp: 666
+      effect: Fireflies
+      icon: mdi:triangle-outline
+      friendly_name: Elements Display
+      supported_features: 55
+      state: 'on'
+    button.identify_elements_display:
+      icon: mdi:magnify
+      friendly_name: Identify Elements Display
+      state: unknown
+- id: '1672770077550'
+  name: Alarm Going off
+  entities:
+    light.master_bedroom_dab_lamp:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6493
+      min_mireds: 154
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      - xy
+      color_mode: xy
+      brightness: 249
+      hs_color:
+      - 0
+      - 100
+      rgb_color:
+      - 255
+      - 0
+      - 0
+      xy_color:
+      - 0.701
+      - 0.299
+      friendly_name: Master Bedroom Dab Lamp
+      supported_features: 40
+      state: 'on'
+    light.master_bedroom_lamp:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      supported_color_modes:
+      - color_temp
+      - xy
+      color_mode: xy
+      brightness: 249
+      hs_color:
+      - 0
+      - 100
+      rgb_color:
+      - 255
+      - 0
+      - 0
+      xy_color:
+      - 0.701
+      - 0.299
+      friendly_name: Master Bedroom Lamp
+      supported_features: 44
+      state: 'on'
+    light.living_room_mood_lighting:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      supported_color_modes:
+      - color_temp
+      - xy
+      friendly_name: Living Room Mood Lighting
+      supported_features: 44
+      color_mode: xy
+      brightness: 216
+      hs_color:
+      - 0
+      - 100
+      rgb_color:
+      - 255
+      - 0
+      - 0
+      xy_color:
+      - 0.7006
+      - 0.2993
+      state: 'on'
+    light.canvas_4966:
+      min_color_temp_kelvin: 1200
+      max_color_temp_kelvin: 6493
+      min_mireds: 154
+      max_mireds: 833
+      effect_list:
+      - Arcade Summer
+      - Candy Cane Fireworks
+      - Color Burst
+      - Falling Whites
+      - Fireworks
+      - Flames
+      - Forest
+      - Forgetful Fish
+      - Galactic Fusion
+      - Inner Peace
+      - Meteor Shower
+      - Nemo
+      - Nightvale
+      - Northern Lights
+      - Oceanworks
+      - Paint Splatter
+      - Passionfruit
+      - Pride Rainbow
+      - Pulse Pop Beats
+      - Radial Sound Bar
+      - Rainbow
+      - Rhythmic Northern Lights
+      - Riddick
+      - Romantic
+      - Rosco
+      - Sea Flame
+      - Sound Bar
+      - Streaking Notes
+      - Try this before you skip it
+      - Zarek
+      supported_color_modes:
+      - color_temp
+      - hs
+      color_mode: hs
+      brightness: 158
+      hs_color:
+      - 0
+      - 0
+      rgb_color:
+      - 255
+      - 255
+      - 255
+      xy_color:
+      - 0.323
+      - 0.329
+      effect: Forgetful Fish
+      icon: mdi:triangle-outline
+      friendly_name: Canvas
+      supported_features: 36
+      state: 'on'
+  metadata: {}
+- id: '1672770122126'
+  name: Alarm-Disarmed
+  entities:
+    light.living_room_mood_lighting:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      supported_color_modes:
+      - color_temp
+      - xy
+      friendly_name: Living Room Mood Lighting
+      supported_features: 44
+      color_mode: color_temp
+      brightness: 215
+      hs_color:
+      - 28.91
+      - 9.942
+      rgb_color:
+      - 255
+      - 241
+      - 229
+      xy_color:
+      - 0.347
+      - 0.34
+      color_temp_kelvin: 5747
+      color_temp: 174
+      state: 'on'
+    light.master_bedroom_dab_lamp:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6493
+      min_mireds: 154
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      - xy
+      color_mode: color_temp
+      brightness: 248
+      hs_color:
+      - 27.371
+      - 15.784
+      rgb_color:
+      - 255
+      - 233
+      - 214
+      xy_color:
+      - 0.362
+      - 0.347
+      friendly_name: Master Bedroom Dab Lamp
+      supported_features: 40
+      color_temp_kelvin: 5263
+      color_temp: 190
+      state: 'on'
+    light.master_bedroom_lamp:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      supported_color_modes:
+      - color_temp
+      - xy
+      color_mode: color_temp
+      brightness: 248
+      hs_color:
+      - 26.726
+      - 26.745
+      rgb_color:
+      - 255
+      - 217
+      - 186
+      xy_color:
+      - 0.395
+      - 0.358
+      friendly_name: Master Bedroom Lamp
+      supported_features: 44
+      color_temp_kelvin: 4484
+      color_temp: 223
+      state: 'on'
+    light.canvas_4966:
+      min_color_temp_kelvin: 1200
+      max_color_temp_kelvin: 6493
+      min_mireds: 154
+      max_mireds: 833
+      effect_list:
+      - Arcade Summer
+      - Candy Cane Fireworks
+      - Color Burst
+      - Falling Whites
+      - Fireworks
+      - Flames
+      - Forest
+      - Forgetful Fish
+      - Galactic Fusion
+      - Inner Peace
+      - Meteor Shower
+      - Nemo
+      - Nightvale
+      - Northern Lights
+      - Oceanworks
+      - Paint Splatter
+      - Passionfruit
+      - Pride Rainbow
+      - Pulse Pop Beats
+      - Radial Sound Bar
+      - Rainbow
+      - Rhythmic Northern Lights
+      - Riddick
+      - Romantic
+      - Rosco
+      - Sea Flame
+      - Sound Bar
+      - Streaking Notes
+      - Try this before you skip it
+      - Zarek
+      supported_color_modes:
+      - color_temp
+      - hs
+      color_mode: hs
+      brightness: 150
+      hs_color:
+      - 0
+      - 0
+      rgb_color:
+      - 255
+      - 255
+      - 255
+      xy_color:
+      - 0.323
+      - 0.329
+      effect: Forgetful Fish
+      icon: mdi:triangle-outline
+      friendly_name: Canvas
+      supported_features: 36
+      state: 'on'
+  metadata: {}
+- id: '1687358660048'
+  name: Outside Off
+  entities:
+    light.sliding_door_outdoor_light:
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      supported_color_modes:
+      - brightness
+      friendly_name: Sliding Door Outdoor Light
+      supported_features: 44
+      state: 'off'
+    light.kitchen_outdoor_light:
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      supported_color_modes:
+      - brightness
+      friendly_name: Kitchen Outdoor Light
+      supported_features: 44
+      state: 'off'
+    light.front_outdoor_lights:
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      supported_color_modes:
+      - brightness
+      friendly_name: Front Outdoor Lights
+      supported_features: 44
+      state: 'off'
+  metadata: {}

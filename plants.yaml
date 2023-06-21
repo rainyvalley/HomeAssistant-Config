@@ -1,0 +1,127 @@
+  Dracaena_massangeana:
+    sensors:
+      moisture: sensor.dracaena_massangeana_soil_moisture_2
+      battery: sensor.dracaena_massangeana_battery_3
+      temperature: sensor.dracaena_massangeana_temperature_2
+      conductivity: sensor.dracaena_massangeana_salt
+      brightness: sensor.dracaena_massangeana_lux
+    min_moisture: 20
+  Aechmea_Fasciata:
+    sensors:
+      moisture: sensor.aechmea_fasciata_soil_moisture
+      battery: sensor.aechmea_fasciata_battery
+      temperature: sensor.aechmea_fasciata_temperature
+      conductivity: sensor.aechmea_fasciata_salt
+      brightness: sensor.aechmea_fasciata_lux
+    min_moisture: 20
+  Aloe_straitula:
+    sensors:
+      moisture: sensor.aloe_striatula_soil_moisture
+      battery: sensor.aloe_striatula_battery_2
+      temperature: sensor.aloe_striatula_temperature
+      conductivity: sensor.aloe_striatula_salt
+      brightness: sensor.aloe_striatula_lux
+    min_moisture: 20
+  Dendrobium_nobile:
+    sensors:
+      moisture: sensor.dendrobium_nobile_soil_moisture
+      battery: sensor.dendrobium_nobile_battery_2
+      temperature: sensor.dendrobium_nobile_temperature
+      conductivity: sensor.dendrobium_nobile_salt
+      brightness: sensor.dendrobium_nobile_lux
+    min_moisture: 20
+  Dracaena_fragrans:
+    sensors:
+      moisture: sensor.dracaena_fragrans_soil_moisture
+      battery: sensor.dracaena_fragrans_battery_2
+      temperature: sensor.dracaena_fragrans_temperature
+      conductivity: sensor.dracaena_fragrans_salt
+      brightness: sensor.dracaena_fragrans_lux
+  Pothos_scandens:
+    sensors:
+      moisture: sensor.pothos_scandens_soil_moisture
+      battery: sensor.pothos_scandens_battery_2
+      temperature: sensor.pothos_scandens_temperature
+      conductivity: sensor.pothos_scandens_salt
+      brightness: sensor.pothos_scandens_lux
+    min_moisture: 20
+  Pothos_scandens_2:
+    sensors:
+      moisture: sensor.pothos_scandens_2_soil_moisture
+      battery: sensor.pothos_scandens_2_battery_2
+      temperature: sensor.pothos_scandens_2_temperature
+      conductivity: sensor.pothos_scandens_2_salt
+      brightness: sensor.pothos_scandens_2_lux
+    min_moisture: 20
+  Satin Pothos:
+    sensors:
+      moisture: sensor.satin_pothos_soil_moisture
+      battery: sensor.satin_pothos_battery_2
+      temperature: sensor.satin_pothos_temperature
+      conductivity: sensor.satin_pothos_salt
+      brightness: sensor.satin_pothos_lux
+    min_moisture: 20
+  Zamioculcas_zamiifolia:
+    sensors:
+      moisture: sensor.zamioculcas_zamiifolia_soil_moisture
+      battery: sensor.zamioculcas_zamiifolia_battery_2
+      temperature: sensor.zamioculcas_zamiifolia_temperature
+      conductivity: sensor.zamioculcas_zamiifolia_salt
+      brightness: sensor.zamioculcas_zamiifolia_lux
+    min_moisture: 20
+  Syngonium_Podophyllum:
+    sensors:
+      moisture: sensor.syngonium_podophyllum_soil_moisture
+      battery: sensor.syngonium_podophyllum_battery_2
+      temperature: sensor.syngonium_podophyllum_temperature
+      conductivity: sensor.syngonium_podophyllum_salt
+      brightness: sensor.syngonium_podophyllum_lux
+    min_moisture: 20
+  Asparagus_Densiflorus:
+    sensors:
+      moisture: sensor.asparagus_densiflorus_soil_moisture
+      battery: sensor.asparagus_densiflorus_battery_2
+      temperature: sensor.asparagus_densiflorus_temperature
+      conductivity: sensor.asparagus_densiflorus_salt
+      brightness: sensor.asparagus_densiflorus_lux
+    min_moisture: 20
+  Aracuaria_Heterophylla:
+    sensors:
+      moisture: sensor.araucaria_heterophylla_soil_moisture
+      battery: sensor.araucaria_heterophylla_battery_2
+      temperature: sensor.araucaria_heterophylla_temperature
+      conductivity: sensor.araucaria_heterophylla_salt
+      brightness: sensor.araucaria_heterophylla_lux
+    min_moisture: 20
+  Aracuaria_Heterophylla_2:
+    sensors:
+      moisture: sensor.araucaria_heterophylla_soil_moisture_2
+      battery: sensor.araucaria_heterophylla_battery_4
+      temperature: sensor.araucaria_heterophylla_temperature_2
+      conductivity: sensor.araucaria_heterophylla_salt_2
+      brightness: sensor.araucaria_heterophylla_lux_2
+    min_moisture: 20
+  Pilea_Peperomioides:
+    sensors:
+      moisture: sensor.pilea_peperomioides_soil_moisture
+      battery: sensor.pilea_peperomioides_battery_2
+      temperature: sensor.pilea_peperomioides_temperature
+      conductivity: sensor.pilea_peperomioides_salt
+      brightness: sensor.pilea_peperomioides_lux
+    min_moisture: 20
+  Tradescantia Zebrina:
+    sensors:
+      moisture: sensor.tradescantia_zebrina_soil_moisture
+      battery: sensor.tradescantia_zebrina_battery_2
+      temperature: sensor.tradescantia_zebrina_temperature
+      conductivity: sensor.tradescantia_zebrina_salt
+      brightness: sensor.pilea_peperomioides_lux
+    min_moisture: 20
+  Tradescantia_Zebrina_2:
+    sensors:
+      moisture: sensor.tradescantia_zebrina_soil_moisture_2
+      battery: sensor.tradescantia_zebrina_battery_4
+      temperature: sensor.tradescantia_zebrina_temperature_2
+      conductivity: sensor.tradescantia_zebrina_salt_2
+      brightness: sensor.pilea_peperomioides_lux_2
+    min_moisture: 20

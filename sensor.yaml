@@ -1,0 +1,343 @@
+  - platform: systemmonitor
+    resources:
+      - type: disk_use_percent
+        arg: /config
+      - type: memory_free
+      - type: memory_use_percent
+      - type: memory_use
+      - type: swap_use
+      - type: swap_free
+      - type: swap_use_percent
+      - type: load_1m
+      - type: load_5m
+      - type: load_15m
+      - type: memory_free
+      - type: last_boot
+      - type: processor_use
+      - type: network_in
+        arg: eth0
+      - type: network_out
+        arg: eth0
+      - type: ipv4_address
+        arg: eth0
+      - type: throughput_network_in
+        arg: eth0
+      - type: throughput_network_out
+        arg: eth0
+      - type: processor_use
+  - platform: snmp
+    name: 'page_count'
+    host: !secret xerox_printer_ip
+    baseoid: 1.3.6.1.4.1.253.8.53.13.2.1.6.1.20.1
+    accept_errors: true
+    unit_of_measurement: 'pages'
+
+  - platform: snmp
+    name: 'prncyanlvl'
+    host: !secret xerox_printer_ip
+    baseoid: 1.3.6.1.2.1.43.11.1.1.9.1.1
+    accept_errors: true
+
+  - platform: snmp
+    name: 'prncyancap'
+    host: !secret xerox_printer_ip
+    baseoid: 1.3.6.1.2.1.43.11.1.1.8.1.1
+    accept_errors: true
+
+  - platform: snmp
+    name: 'prnmagentalvl'
+    host: !secret xerox_printer_ip
+    baseoid: 1.3.6.1.2.1.43.11.1.1.9.1.2
+    accept_errors: true
+
+  - platform: snmp
+    name: 'prnmagentacap'
+    host: !secret xerox_printer_ip
+    baseoid: 1.3.6.1.2.1.43.11.1.1.8.1.2
+    accept_errors: true
+
+  - platform: snmp
+    name: 'prnyellowlvl'
+    host: !secret xerox_printer_ip
+    baseoid: 1.3.6.1.2.1.43.11.1.1.9.1.3
+    accept_errors: true
+
+  - platform: snmp
+    name: 'prnyellowcap'
+    host: !secret xerox_printer_ip
+    baseoid: 1.3.6.1.2.1.43.11.1.1.8.1.3
+    accept_errors: true
+
+  - platform: snmp
+    name: 'prnblacklvl'
+    host: !secret xerox_printer_ip
+    baseoid: 1.3.6.1.2.1.43.11.1.1.9.1.4
+    accept_errors: true
+
+  - platform: snmp
+    name: 'prnblackcap'
+    host: !secret xerox_printer_ip
+    baseoid: 1.3.6.1.2.1.43.11.1.1.8.1.4
+    accept_errors: true
+    
+  - platform: statistics
+    name: "Rainfall in Last 24 Hours"
+    entity_id: sensor.acurite_5n1_144_rt
+    state_characteristic: change
+    sampling_size: 200
+    max_age:
+      hours: 24
+
+
+  - platform: statistics
+    name: "Rainfall in Last Week"
+    entity_id: sensor.acurite_5n1_144_rt
+    sampling_size: 200
+    state_characteristic: change
+    max_age:
+      days: 7
+
+
+  - platform: statistics
+    name: "Rainfall in Last Month"
+    entity_id: sensor.acurite_5n1_144_rt
+    sampling_size: 200
+    state_characteristic: change
+    max_age:
+      days: 30
+
+
+  - platform: statistics
+    name: "Lightning Strikes in Last Week"
+    entity_id: sensor.acurite_6045m_lightning_sensor_strcnt
+    sampling_size: 200
+    state_characteristic: change
+    max_age:
+      days: 7
+
+
+  - platform: statistics
+    name: "Lightning Strikes in Last Month"
+    entity_id: sensor.acurite_6045m_lightning_sensor_strcnt
+    sampling_size: 200
+    state_characteristic: change
+    max_age:
+      days: 30
+
+
+  - platform: statistics
+    name: "Lightning Strikes in Last 24 Hours"
+    entity_id: sensor.acurite_6045m_lightning_sensor_strcnt
+    sampling_size: 200
+    state_characteristic: change
+    max_age:
+      hours: 24
+
+
+  - platform: statistics
+    name: "Strikes Average Distance in Last 24 Hours"
+    entity_id: sensor.acurite_6045m_lightning_sensor_stdist
+    state_characteristic: mean
+    sampling_size: 200
+    max_age:
+      hours: 24
+
+
+  - platform: statistics
+    name: "Strikes Average Distance in Last Week"
+    entity_id: sensor.acurite_6045m_lightning_sensor_stdist
+    state_characteristic: mean
+    sampling_size: 200
+    max_age:
+      days: 7
+
+
+  - platform: statistics
+    name: "Strikes Average Distance in Last Month"
+    entity_id: sensor.acurite_6045m_lightning_sensor_stdist
+    state_characteristic: mean
+    sampling_size: 200
+    max_age:
+      days: 30
+
+
+  - platform: statistics
+    name: "Average Daily Wind Direction"
+    entity_id: sensor.acurite_5n1_144_wd
+    sampling_size: 200
+    state_characteristic: mean
+    max_age:
+      hours: 24
+
+
+  - platform: statistics
+    name: "Average Daily Wind Speed"
+    entity_id: sensor.acurite_5n1_144_ws
+    sampling_size: 20
+    state_characteristic: mean
+    max_age:
+      hours: 24
+
+
+  - platform: statistics
+    name: "Average Weekly Wind Speed"
+    entity_id: sensor.acurite_5n1_144_ws
+    sampling_size: 200
+    state_characteristic: mean
+    max_age:
+      days: 7
+
+
+  - platform: statistics
+    name: "Average Daily Humidity"
+    entity_id: sensor.acurite_5n1_144_h
+    sampling_size: 200
+    state_characteristic: mean
+    max_age:
+      hours: 24
+
+  - platform: statistics
+    name: "Average Weekly Humidity"
+    entity_id: sensor.acurite_5n1_144_h
+    sampling_size: 200
+    state_characteristic: mean
+    max_age:
+      days: 7
+
+
+  - platform: statistics
+    name: "Average Daily Temperature"
+    entity_id: sensor.acurite_5n1_144_f
+    sampling_size: 200
+    state_characteristic: mean
+    max_age:
+      hours: 24
+
+
+  - platform: statistics
+    name: "Average Weekly Temperature"
+    entity_id: sensor.acurite_5n1_144_f
+    sampling_size: 200
+    state_characteristic: mean
+    max_age:
+      days: 7
+
+  - platform: integration
+    source: sensor.downstairs_bath_lights_power
+    name: Energy Spent Downstairs Bath Lights
+    unit_prefix: k
+    method: left
+    unit_time: h
+    round: 2
+
+  - platform: template
+    sensors:
+      wind_direction:
+        friendly_name: "Wind Direction"
+        value_template: >-
+          {% set winbearing = (states('sensor.acurite_5n1_acurite_wd')|float/45)|int|round +1 %}
+          {% set winddir = ['North', 'North East','East','South East','South','South West','West','North West']%}
+          {{ winddir[winbearing]}}
+
+  - platform: template
+    sensors:
+      cyan_toner_level:
+        friendly_name: 'Cyan Toner Level'
+        unit_of_measurement: '%'
+        value_template: '{{ ((states.sensor.prncyanlvl.state | float) / (states.sensor.prncyancap.state | float)) * 100 | round(1) }}'
+      magenta_toner_level:
+        friendly_name: 'Magenta Toner Level'
+        unit_of_measurement: '%'
+        value_template: '{{ ((states.sensor.prnmagentalvl.state | float) / (states.sensor.prnmagentacap.state | float)) * 100 | round(1) }}'
+      yellow_toner_level:
+        friendly_name: 'Yellow Toner Level'
+        unit_of_measurement: '%'
+        value_template: '{{ ((states.sensor.prnyellowlvl.state | float) / (states.sensor.prnyellowcap.state | float)) * 100 | round(1) }}'
+      black_toner_level:
+        friendly_name: 'Black Toner Level'
+        unit_of_measurement: '%'
+        value_template: '{{ ((states.sensor.prnblacklvl.state | float) / (states.sensor.prnblackcap.state | float)) * 100 | round(1) }}'
+
+
+  - platform: template
+    sensors:
+      dishwasher_state:
+        friendly_name: 'Dishwasher Program Length'
+        value_template: '{{ state_attr("sensor.dishwasher", "run_state") }}' 
+        icon_template: mdi:dishwasher      
+      dishwasher_program_length:
+        friendly_name: 'Dishwasher Program Length'
+        value_template: >-
+          {% set dishwasherprogramminutes = (states.sensor.dishwasher.attributes.initial_time.split(':')[0]|int * 60) + (states.sensor.dishwasher.attributes.initial_time.split(':')[1] | int) %}
+          {{ dishwasherprogramminutes }} 
+        icon_template: mdi:dishwasher      
+      dishwasher_remaining_time:
+        friendly_name: 'Dishwasher Remaining Time'
+        value_template: >-
+          {% set dishwasherremainminutes = (states.sensor.dishwasher.attributes.remain_time.split(':')[0]|int * 60) + (states.sensor.dishwasher.attributes.remain_time.split(':')[1] | int) %}
+          {{ dishwasherremainminutes }}
+        icon_template: mdi:dishwasher      
+      dishwasher_progress:
+        friendly_name: 'Dishwasher Progress'
+        value_template: >-
+          {% if (states.sensor.dishwasher_program_length.state | int) < 1 %}
+            0
+          {% else %}          
+          {% set dishwasherprogress = (100 - (((states.sensor.dishwasher_remaining_time.state | int) / (states.sensor.dishwasher_program_length.state | int)) * 100)) %}
+          {{ dishwasherprogress }}
+          {% endif %}         
+        icon_template: mdi:dishwasher      
+
+      washer_state:
+        friendly_name: 'Washer State'
+        value_template: '{{ state_attr("sensor.washer", "run_state") }}'
+        icon_template: mdi:washing-machine      
+      washer_program_length:
+        friendly_name: 'Washer Program Length'
+        value_template: >-
+          {% set washerprogramminutes = (states.sensor.washer.attributes.initial_time.split(':')[0]|int * 60) + (states.sensor.washer.attributes.initial_time.split(':')[1] | int) %}
+          {{ washerprogramminutes }}
+        icon_template: mdi:washing-machine      
+      washer_remaining_time:
+        friendly_name: 'Washer Remaining Time'
+        value_template: >-
+          {% set washerremainminutes = (states.sensor.washer.attributes.remain_time.split(':')[0]|int * 60) + (states.sensor.washer.attributes.remain_time.split(':')[1] | int) %}
+          {{ washerremainminutes }}
+        icon_template: mdi:washing-machine
+      washer_progress:
+        friendly_name: 'Washer Progress'
+        value_template: >-
+          {% if (states.sensor.washer_program_length.state | int) < 1 %}
+            0
+          {% else %}          
+            {% set washerprogress = (100 - (((states.sensor.washer_remaining_time.state | int) / (states.sensor.washer_program_length.state | int)) * 100)) %}
+            {{ washerprogress }}
+          {% endif %}             
+        icon_template: mdi:washing-machine
+      dryer_state:
+        friendly_name: 'Dryer State'
+        value_template: '{{ state_attr("sensor.dryer", "run_state") }}'
+        icon_template: mdi:tumble-dryer     
+      dryer_program_length:
+        friendly_name: 'Dryer Program Length'
+        value_template: >-
+          {% set dryerprogramminutes = (states.sensor.dryer.attributes.initial_time.split(':')[0]|int * 60) + (states.sensor.dryer.attributes.initial_time.split(':')[1] | int) %}
+          {{ dryerprogramminutes }} 
+        icon_template: mdi:tumble-dryer     
+      dryer_remaining_time:
+        friendly_name: 'Dryer Remaining Time'
+        value_template: >-
+          {% set dryerprogramminutes = (states.sensor.dryer.attributes.remain_time.split(':')[0]|int * 60) + (states.sensor.dryer.attributes.remain_time.split(':')[1] | int) %}
+          {{ dryerprogramminutes }}
+        icon_template: mdi:tumble-dryer
+      dryer_progress:
+        friendly_name: 'Dryer Progress'
+        value_template: >-
+          {% if (states.sensor.dryer_program_length.state | int) < 1 %}
+            0
+          {% else %}           
+            {% set dryerprogress = (100 - (((states.sensor.dryer_remaining_time.state | int) / (states.sensor.dryer_program_length.state | int)) * 100)) %}
+          {{ dryerprogress }}
+          {% endif %}           
+        icon_template: mdi:tumble-dryer   
+
